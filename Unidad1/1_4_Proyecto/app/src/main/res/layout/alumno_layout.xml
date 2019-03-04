@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/design_default_color_primary_dark" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Nombre"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/icono"
+        app:layout_constraintTop_toTopOf="@+id/icono" />
+
+    <TextView
+        android:id="@+id/carrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Carrera"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/noControl"
+        app:layout_constraintStart_toEndOf="@+id/icono"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/noControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/icono"
+        app:layout_constraintStart_toEndOf="@+id/icono" />
+
+    <Button
+        android:id="@+id/editar"
+        android:layout_width="62dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="172dp"
+        android:text="ACTUALIZAR"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="@+id/icono"
+        app:layout_constraintStart_toEndOf="@+id/icono"
+        app:layout_constraintTop_toTopOf="@+id/icono"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:id="@+id/borrar"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Borrar"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="@+id/icono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toEndOf="@+id/editar"
+        app:layout_constraintTop_toTopOf="@+id/icono" />
+</android.support.constraint.ConstraintLayout>
